@@ -1,0 +1,6 @@
+<div id="headercorner">&nbsp</div>
+<div id="header">
+	<a href="@pathto(index)"> <div id="menuitem">HOME</div></a> 
+	<a href="@pathto(about)"> <div id="menuitem">ABOUT</div></a>
+	<a href="@pathto(faq)"> <div id="menuitem">FAQ</div></a> 
+</div>

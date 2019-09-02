@@ -1,0 +1,98 @@
+<textarea class="markdown">
+	## Tiar Site Repository Template ❤
+	This is the homepage for the Nift website repository template **tiar-site** [[BitBucket](https://bitbucket.org/nsm-templates/tiar-site), [GitHub](https://github.com/nsm-templates/tiar-site), [GitLab](https://gitlab.com/nsm-templates/tiar-site)]. [Nift](https://nift.cc) (aka nsm) is a cross-platform open source git-like and $\LaTeX$-like site manager coded in C++.
+
+	This website uses [Showdown](http://showdownjs.com/) to convert Markdown to HTML.
+
+	You can import (or fork and rename) the **tiar-site** website repository template to begin making your own website with the same design.
+
+	See the [About](@pathto(about)) page for information about adding/removing pages to/from your site and modifying the content/layout of your site.
+
+	See the [FAQ](@pathtopage(faq)) page for how to import/fork this repository along with answers to other frequently asked questions.
+
+	You could put content in a new markdown file *file.md* if you wanted and then have \@input(file.md). Or you could move the \<textarea\> tags in to the page template **template/page.template** and set the default extension in *.siteinfo/nsm.config* to **.md**. You may also like to play with the css for headers to have them automatically centre, that way your Markdown headers will be centred.
+
+	## This is a heading
+	### This is a subheading
+
+	You can change the background colours with the css variables defined at the start of `site/assets/css/main.css`.
+
+	You can do $\LaTeX$ equations thanks to MathJaX. Both `$..$` and `\(..\)` work for inline equations, and both `$$..$$` and `\[..\]` work for displayed equations (note inside markdown/showdown blocks use `\\(..\\)` and `\\[..\\]`, or the `$` syntax). Eg. When \\(a \ne 0\\), there are two solutions to $ax^2 + bx + c = 0$ and they are:
+
+	$$x = \frac{-b \pm \sqrt{b^2-4ac}}{2a}$$
+
+	You can write your blog posts using Markdown. The easiest way to create a new page is to copy an old page, just use:
+
+		nsm cp blog/post01 blog/postx
+
+	See [here](https://github.com/showdownjs/showdown/wiki/Showdown's-Markdown-syntax) for documentation on Showdown's markdown syntax, and [here](https://github.com/showdownjs/showdown#setting-options) for documentation on Showdown options. 
+
+	To use emojis you need to enable the **"emoji"** option, then emojis are eg. `:smile:`, `:+1:`, `:bacon:` and `:zap:` for :smile:, :+1:, :bacon: and :zap:. See [here](https://github.com/showdownjs/showdown/wiki/emojis) for a list of Showdown supported emojis.
+
+	1. You can make text *italic* by surrounding it with \\*, eg. \\*text\\*. 
+	2. You can make text **bold** by surrounding it with \\*\\*, eg. \\*\\*text\\*\\*. 
+	3. You can make text ~~strikethrough~~ by surrounding it with \~\~, eg. \~\~text\~\~. 
+
+	You can do unordered lists using \*, \- or \+, Eg.:
+	* list item 1
+	- list item 2
+	+ list item 3
+
+	You can do ordered lists using 1., 2., 3., etc., Eg.:
+	1. list item 1
+	2. list item 2
+	3. list item 3
+
+	You can do links using **\[text\]\(url\)**. You can do images using **\[alt text\]\(img url\)**.
+
+	Tables aren't part of the core Markdown spec, but they are part of GFM and Showdown supports them by turning on the option **tables**.
+
+	Colons can be used to align columns.
+
+	In the new version, the outer pipes (|) are optional, matching GFM spec.
+
+	You also don't need to make the raw Markdown line up prettily.
+
+	You can also use other markdown syntax inside them.
+
+	The following table:
+
+	| Tables        | Are           | Cool  |
+	| ------------- |:-------------:| -----:|
+	| **col 3 is**  | right-aligned | $1600 |
+	| col 2 is      | *centered*    |   $12 |
+	| zebra stripes | ~~are neat~~  |    $1 |
+
+	is generated using
+
+		| Tables        | Are           | Cool  |
+		| ------------- |:-------------:| -----:|
+		| **col 3 is**  | right-aligned | $1600 |
+		| col 2 is      | *centered*    |   $12 |
+		| zebra stripes | ~~are neat~~  |    $1 |
+
+	You can do inline code by surrounding the code with \`, eg `print("hello, world!")`.
+
+	To do a code block just indent by 4 spaces preceded by an empty line, for example:
+
+		#include <cstdio>
+		#include <iostream>
+
+		int main()
+		{
+			std::cout << "hello, world!" << std::endl;
+
+			return 0;
+		}
+
+	Or you can use Google code prettify outside markdown blocks as follows:
+</textarea>
+
+<pre class="prettyprint">
+	int main()
+	{
+		std::cout << "hello, world!" << std::endl;
+
+		return 0;
+	}
+</pre>
