@@ -26,7 +26,6 @@
 
 		@input(template/menu.content)
 
-		<script src='@pathtofile(site/js/process_pre_tags.js)'></script>
 		<script src='@pathtofile(site/js/process_md_blocks.js)'></script>
 		<script src="@pathtofile(site/js/showdown.min.js)"></script>
 		<script>
