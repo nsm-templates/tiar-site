@@ -11,7 +11,7 @@
 			<div id="filler" style="margin-top:45px">
 				<div id="content">
 					<div id="pagetext">			
-						@inputcontent
+						@content()
 						<noselect><br><br><br><br><br><br><br></noselect>
 					</div>
 						
