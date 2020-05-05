@@ -2,9 +2,9 @@
 <title>tiar-site</title>
 
 
-<link rel="stylesheet" href="@pathtofile(site/css/style.css)" type="text/css">
-<link rel="stylesheet" href="@pathtofile(site/css/pre.css)" type="text/css">
-<link rel="shortcut icon" href="@pathtofile(site/img/favicon.ico)" type="image/x-icon">
+<link rel="stylesheet" href="@pathtofile($[output-dir]/css/style.css)" type="text/css">
+<link rel="stylesheet" href="@pathtofile($[output-dir]/css/pre.css)" type="text/css">
+<link rel="shortcut icon" href="@pathtofile($[output-dir]/img/favicon.ico)" type="image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
